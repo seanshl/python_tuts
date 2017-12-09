@@ -2,7 +2,7 @@
 ### Powerful Sublime!
 
 ## References
-    * [Setting up a Python IDE in Sublime Text](https://www.youtube.com/watch?v=xFciV6Ew5r4
+    * [Setting up a Python IDE in Sublime Text](https://www.youtube.com/watch?v=xFciV6Ew5r4)
 	
 ## Steps
 1.  ```CMD + SHIFT + P``` open the command panel
