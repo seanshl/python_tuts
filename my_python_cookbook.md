@@ -28,7 +28,10 @@
 	* ```d = {'x': 'A', 'y': 'B', 'z': 'C' } [k + '=' + v for k, v in d.items()]```
 	* ```[(x, x**2) for x in range(6)]```
 	* ```[[row[i] for row in matrix] for i in range(4)]```
-	* 
+	* ``` chile_ranks = {'ghost' : 1, 'habanero': 2, 'cayenne': 3}```
+	  ```rank_dict = {rank: name for name, rank in chile_ranks.items()}```
+	* ```chile_rank_set = {len(name) for name in rank_dict.values()}```
+	
 
 ### Slice
 1. 可切的对象
