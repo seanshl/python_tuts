@@ -31,5 +31,22 @@
 	* 
 
 ### Slice
+1. 可切的对象
+	* list -> list
+	* str -> str
+	* tuple -> tuple
+	* bytes -> bytes
+	* 实现了下列方法的类
+		* __getitem__
+		* __setite__
+2. 左闭右开
+3. 如果从0开始，忽略0, 如果slice到结束，忽略最后一个
+	* a[:5] = a[0:5]
+	* a[5:] = a[5:len(a)]
 
 ### OOP
+
+
+### Built-in functions
+* [repr](https://docs.python.org/3/library/functions.html#repr)
+	* 类似java的toString()
