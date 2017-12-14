@@ -11,6 +11,14 @@
 	* Python代码核心应该使用str 
 
 ### Generator
+1. **Conceptions**
+	* list comprehension的问题在于当input很大时，它会eagerly计算所有值
+	* Generator不会再运行时计算所有output,而是会提供一个iterator进行lazy calc.
+	* 写法就是把list comprenshion方括号改成圆括号
+2. **Miscs**
+3. **Examples**
+	* ```it = (len(x) for x in open('/tmp/my_file.txt')```, .....,  ```print(next(it))```
+	* 
 
 ### List Comprehensions
 1. **Conceptions**
