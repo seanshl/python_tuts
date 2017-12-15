@@ -39,7 +39,14 @@
 	* ``` chile_ranks = {'ghost' : 1, 'habanero': 2, 'cayenne': 3}```
 	  ```rank_dict = {rank: name for name, rank in chile_ranks.items()}```
 	* ```chile_rank_set = {len(name) for name in rank_dict.values()}```
-	
+
+### Enumerate
+1. **Conceptions**
+	* 当需要同时知道index和值时使用
+	* 生成一个生成器
+2. **Examples**
+	* ``` for i, flavor in enumerate(flavor_list, 1): 
+		print('%d: %s' % (i, flavor))```
 
 ### Slice
 1. 可切的对象
@@ -61,3 +68,5 @@
 ### Built-in functions
 * [repr](https://docs.python.org/3/library/functions.html#repr)
 	* 类似java的toString()
+* [enumerate](https://docs.python.org/3/library/functions.html?highlight=enumerate#enumerate)
+	* 
