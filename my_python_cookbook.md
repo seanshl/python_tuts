@@ -17,8 +17,10 @@
 	* 写法就是把list comprenshion方括号改成圆括号
 2. **Miscs**
 3. **Examples**
-	* ```it = (len(x) for x in open('/tmp/my_file.txt')```, .....,  ```print(next(it))```
-	* 
+	* ```it = (len(x) for x in open('/tmp/my_file.txt')```, .....,  ```print(next(it))```
+	
+### Iterator & Iterable
+1. 
 
 ### List Comprehensions
 1. **Conceptions**
@@ -70,3 +72,5 @@
 	* 类似java的toString()
 * [enumerate](https://docs.python.org/3/library/functions.html?highlight=enumerate#enumerate)
 	* 
+* [zip]
+	* 将两个或以上的iterators包成一个lazy generator, zip生成一个tuple包含每一个iterator的next
