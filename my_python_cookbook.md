@@ -103,9 +103,25 @@
 9. **装饰器**
 	1. 函数对象有一个__name__属性，可以拿到函数的名字
 	2. 在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。
-	3. decorator就是一个返回函数的高阶函数
+	3. decorator就是一个返回函数的高阶函数,它必须只能接受被它装饰的函数作为变量.
+		```
+		def log(func):
+			def wrapper(*args, **kw):
+				print('call %s():' % func.__name__)
+				return func(*args, **kw)
+			return wrapper
+		```
 	4. 把@log放到now()函数的定义处，相当于执行了语句：```now = log(now)```,当执行now()时实际执行了内部的wrapper
-	5. 
+	5. decorator可以传入参数，相当于执行了```now = log('execute')(now)```
+		```
+		def log(text):
+		    def decorator(func):
+				def wrapper(*args, **kw):
+					print('%s %s():' % (text, func.__name__))
+					return func(*args, **kw)
+				return wrapper
+		    return decorator
+		```
 
 	
 
